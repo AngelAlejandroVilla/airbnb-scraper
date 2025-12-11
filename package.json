@@ -1,11 +1,12 @@
 {
   "name": "airbnb-scraper",
   "version": "1.0.0",
-  "main": "module",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npx puppeteer browsers install chrome"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.2.1",
-    "puppeteer": "22.10.0"
+    "puppeteer": "^24.15.0"
   }
 }
