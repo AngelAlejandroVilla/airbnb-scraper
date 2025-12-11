@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: airbnb-scraper
+    runtime: node
+    repo: https://github.com/AngelAlejandroVilla/airbnb-scraper
+    branch: main
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_VERSION
+        value: 18
